@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_news_feed">
+
+    <fragment
+        android:id="@+id/navigation_news_feed"
+        android:name="com.ptit.mad.coreading.ui.newsfeed.NewsFeedFragment"
+        android:label="@string/title_news_feed"
+        tools:layout="@layout/fragment_news_feed" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.ptit.mad.coreading.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/search_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.ptit.mad.coreading.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ptit.mad.coreading.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
